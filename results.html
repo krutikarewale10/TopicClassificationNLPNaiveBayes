@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+ <head>
+ <title>Topic Classification</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ </head>
+ <body>
+<h3>Your text entered:</h3>
+<div>{{ content }}</div>
+<h3>Prediction:</h3>
+<div>This text is <strong>{{ prediction }}</strong>
+ (probability: {{ probability }}%).</div>
+<div id='button'>
+ <form action="/">
+ <input type=submit value='Submit another text'>
+ </form>
+</div>
+</body>
+</html>
+
